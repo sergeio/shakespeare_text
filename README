@@ -1,0 +1,23 @@
+This is the result of some saturday morning hacking:
+A text-generator trained on Shakespeare's complete works.
+
+Sample use:
+>>> probability_dict = prime_probability_dict()
+>>> print make_paragraph(probability_dict)
+
+Dist then sombeave? Dist hough thounte prair wing, of beat let andays; whe
+larding gle lust be auditered: eld, be whald's thy forld's glas. Be, of welf
+abuty's notheet smake crueself gardis el: hist thou se buty's praffit thy
+summer bear thy be bereautter will hid ow, 'thing, beaser nigh th
+usureaself-lovers sured makill world by why too thou wasums ised: trair gives
+be lespi this of eve? And beauted som dee, and ther gives, se wity? Glefty wor
+self ine, and be livelie shat is thaken be ther, shown dide so malt lese. Thy
+dwer's proud whou fre till thy since sure dieguil dosty und whou be thould,
+flacter-sure, took age frosto beaut to anst untramembraggac e imakill calt hou
+what tomb, nown thy buse so no she smak's anday smallen miggart sion shous then
+sprald's this fouse, saprow same so to this asum thy tand lusum vial dend thy
+of himadsti all ablefty's nespeasumme, but plage theirldered eld th whend thou
+but let if top the of beaut y andee broust die ne ne. Maked the arm usum thy be
+thould's wass tre writy rofithere, hideft, intreaviallardithe timemb deep sure
+so so orly hiles sheet whamig now trand morld's that fair thenters thy thould
+und.
