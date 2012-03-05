@@ -13,14 +13,15 @@ def make_word(probs):
             return key
         assert False
 
-    previous = get_letter(random(), probs['^'])
-    letter_lis = [previous]
-    previous = '^' + previous
+    first = get_letter(random(), probs['^'])
+    previous = get_letter(random(), probs['^' + first])
+    letter_lis = [first, previous]
+    previous = '^' + first + previous
 
     while previous[-1] != '$':
         new = get_letter(random(), probs[previous])
         letter_lis.append(new)
-        previous = previous[-1] + new
+        previous = previous[-2:] + new
 
     return ''.join(letter_lis[:-1])
 
@@ -31,10 +32,14 @@ def build_count_dict(max_lines=1000):
 
     """
     def update_count_dict(word, count_dict):
-        word = '^' + word.lower() + '$'
-        count_dict['^'][word[1]] += 1
-        for i in xrange(len(word) - 2):
-            count_dict[word[i:i + 2]][word[i + 2]] += 1
+        word = word.lower()
+        first_letter = word[0]
+        count_dict['^'][first_letter] += 1
+        if len(word) > 1:
+            count_dict['^' + first_letter][word[1]] += 1
+        word = '^' + word + '$'
+        for i in xrange(len(word) - 3):
+            count_dict[word[i:i + 3]][word[i + 3]] += 1
 
     def process_line(line, count_dict):
         line = line.strip()
