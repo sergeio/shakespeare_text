@@ -3,6 +3,11 @@ This is the result of some saturday morning hacking:
 A text-generator trained on Shakespeare's complete works.
 
 Sample use:
+```
+python random_text.py
+```
+
+or
 
 ```python
 probability_dict = prime_probability_dict(max_lines=100000)

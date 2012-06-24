@@ -160,3 +160,8 @@ def make_paragraph(probs, num_words=200):
         handle_i(paragraph, i)
     handle_end_punctuation(paragraph)
     return ''.join(paragraph)
+
+
+if __name__ == '__main__':
+    probability_dict = prime_probability_dict(max_lines=10000)
+    print make_paragraph(probability_dict)
