@@ -121,7 +121,7 @@ Comments
 --------
 There are a couple things I would like to highlight here:
 
-  1. It's friggin' cool that this little algorithm can come output words like
+  1. It's friggin' cool that this little algorithm can generate words like
      "pleasure" and "office", without knowing what a word is, really.
 
   2. The text sounds Shakespearian.  (To me, at least).  I don't know if that's
